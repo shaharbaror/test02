@@ -1,0 +1,30 @@
+.Box {
+    width:5vh;
+    height:5vh;
+    border-radius: 10px;
+    margin: 3px 3px 0 3px;
+    border: 2px solid rgba(0,0,0,0.6);
+    font-family: fantasy;
+    font-size: 3vh;
+    text-align: center;
+}
+.Box p{
+    margin-top: 10%;
+}
+
+.right {
+    background-color: rgb(70, 192, 50);
+    border-color: rgba(70, 192, 50,0.2);
+    color:white;
+}
+.close {
+    background-color: rgb(219, 219, 0);
+    border-color: rgba(219, 219, 0, 0.2);
+    color:white;
+}
+
+.none {
+    background-color: rgb(177, 177, 177);
+    border-color: rgba(177, 177, 177,0.2);
+    color:white;
+}

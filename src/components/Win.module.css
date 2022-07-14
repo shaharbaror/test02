@@ -1,0 +1,6 @@
+.box {
+    width:30%;
+    margin: auto 35%;
+    background-color: white;
+    z-index: 11;
+}
