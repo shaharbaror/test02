@@ -17,7 +17,7 @@ const BoxRow = (props) => {
             ref.current.focus();
             setIsFocus(true)
         }
-    }, [isFocus, props.onFocus]);
+    }, [isFocus, props.onFocus, props.isReset]);
 
 
     const handleKeyDown = event => {
@@ -43,13 +43,15 @@ const BoxRow = (props) => {
 
         } else if (keys === 'Enter' && words.length === 5) {
 
-            if (words === ChosenWord) {
+            if (words === ChosenWord.toString()) {
+                console.log("You Win");
+
 
                 props.won();
 
             } else {
-
                 console.log("nope");
+                props.loss();
 
             }
             setHasSubmit(true);
@@ -65,7 +67,10 @@ const BoxRow = (props) => {
         setIsFocus(false);
     }
 
-
+    useEffect(() => {
+        setHasSubmit(false);
+        setWords('');
+    }, [props.isReset]);
 
 
     return (

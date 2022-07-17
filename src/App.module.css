@@ -7,3 +7,15 @@
     width:200vh;
     height:100vh;
 }
+
+.button {
+    border-radius: 15px;
+    width: 20vh;
+    height: 5vh;
+    background-color: rgb(94, 189, 0);
+    border:5px solid rgba(94, 189, 0, 0.5);
+    color:white;
+    font-size: large;
+    font-family: cursive;
+    margin: 2% 42.5%;
+}
